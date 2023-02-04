@@ -34,6 +34,7 @@
 - [ ] Navigate to the project directory: `cd Whisked`
 - [ ] Install the dependencies: `npm install`
 - [ ] Create a copy of the `.env.example` file and name it `.env`.
+- [ ] Replace `<YOUR-API-ID-HERE>` in `.env` with your `Edamam API` ID.
 - [ ] Replace `<YOUR-API-KEY-HERE>` in `.env` with your `Edamam API` key.
 - [ ] Start the development server: npm start
 - [ ] Open [`http://127.0.0.1:5173`](http://127.0.0.1:5173) in your browser to view the app.
