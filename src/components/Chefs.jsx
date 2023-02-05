@@ -32,7 +32,7 @@ const Chefs = () => {
     },
   ];
   return (
-    <div className="min-h-fit bg-base-200">
+    <div id="chefs" className="min-h-fit bg-base-200">
       <div className="flex-col hero-content lg:flex-row-reverse">
         <div>
           <h1 className="mb-2 text-5xl font-bold">Top Chefs</h1>

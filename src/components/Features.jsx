@@ -7,7 +7,7 @@ const Features = () => {
     "Get cooking tips",
   ];
   return (
-    <div className="min-h-fit bg-base-200">
+    <div id="how-to" className="min-h-fit bg-base-200">
       <div className="flex-col hero-content lg:flex-row-reverse">
         <img
           src="https://images.unsplash.com/photo-1598762888384-ef5fd4345ef7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80"

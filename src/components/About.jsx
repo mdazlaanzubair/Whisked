@@ -24,18 +24,10 @@ const About = () => {
       title: "Ingredient List",
       desc: "Easily add ingredients and plan your meals for the week to avoid eating out.",
     },
-    {
-      title: "Cooking Instructions",
-      desc: "Whisked simplifies cooking with step-by-step instructions and tips.",
-    },
-    {
-      title: "Recipe Tracking",
-      desc: "Never lose your place with our app's recipe tracking feature.",
-    },
   ];
 
   return (
-    <div className=" min-h-fit bg-base-200">
+    <div id="about" className=" min-h-fit bg-base-200">
       <div className="hero-content flex-row items-start">
         <img
           src="https://images.unsplash.com/photo-1543353071-873f17a7a088?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
@@ -59,8 +51,8 @@ const About = () => {
             <div className="px-10 grid grid-cols-3 gap-0">
               {cardData.map((data, index) => (
                 <div key={index}>
-                  <div className="card border text-center bg-transparent hover:bg-primary hover:text-primary-content hover:shadow-2xl">
-                    <div className="card-body bg-transparent py-5">
+                  <div className="w-full h-full card text-center bg-transparent hover:bg-primary hover:text-primary-content hover:shadow-2xl">
+                    <div className="card-body bg-transparent">
                       <h1 className="card-title text-sm mx-auto capitalize font-bold">
                         {data.title}
                       </h1>

@@ -3,7 +3,7 @@ import ImgGrid from "./ImgGrid";
 
 const Hero = () => {
   return (
-    <div className="hero min-h-screen bg-base-200">
+    <div id="home" className="hero min-h-screen bg-base-200">
       <div className="flex-col hero-content lg:flex-row-reverse">
         <div className="flex-1 mb-5">
           <ImgGrid />
