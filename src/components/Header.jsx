@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-import AppLogo from "../assets/app-logo.png";
 import Navbar from "./Navbar";
 
 const Header = ({ setTheme, theme }) => {
@@ -47,6 +45,7 @@ const Header = ({ setTheme, theme }) => {
           ))}
         </select>
       </div>
+
       <Navbar />
     </header>
   );

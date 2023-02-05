@@ -1,18 +1,14 @@
 import { Link } from "react-router-dom";
+import ImgGrid from "./ImgGrid";
 
 const Hero = () => {
   return (
     <div className="hero min-h-screen bg-base-200">
       <div className="flex-col hero-content lg:flex-row-reverse">
-        <div className="grid">
-          
-
+        <div className="flex-1 mb-5">
+          <ImgGrid />
         </div>
-        <img
-          src="https://picsum.photos/id/1005/600/600"
-          className="max-w-sm rounded-lg shadow-2xl"
-        />
-        <div>
+        <div className="flex-1 mb-5">
           <h1 className="mb-5 text-5xl font-bold">
             Whisked – Your Personal Recipe Companion
           </h1>
@@ -23,7 +19,9 @@ const Hero = () => {
             time. Whether you're a seasoned chef or just starting out, Whisked
             has everything you need to create amazing meals.
           </p>
-          <Link className="btn btn-primary" to="/recipes">Enhance Your Skills</Link>
+          <Link className="btn btn-primary" to="/recipes">
+            Enhance Your Skills
+          </Link>
         </div>
       </div>
     </div>

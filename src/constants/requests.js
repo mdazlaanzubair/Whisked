@@ -1,22 +1,29 @@
 import axios from "axios";
 
-// API Auth Parameters
-export const auth = {
-  base_url: process.env.REACT_APP_BASE_URL,
-  app_id: process.env.REACT_APP_API_ID,
-  app_key: process.env.REACT_APP_API_KEY,
+// Edamam API Auth Parameters
+export const edamamAuth = {
+  base_url: import.meta.env.VITE_BASE_URL,
+  app_id: import.meta.env.VITE_API_ID,
+  app_key: import.meta.env.VITE_API_KEY,
 };
 
-export const searchRecipies = async (searchWord) => {
+// fetch recipes from api by search
+export const searchRecipes = async (searchWord) => {
   // generating URL to be fetched
-  const url = `${auth.base_url}?type=public&q=${searchWord}&app_id=${auth.app_id}&app_key=${auth.app_key}`;
+  const url = `${edamamAuth.base_url}?type=public&q=${searchWord}&app_id=${edamamAuth.app_id}&app_key=${edamamAuth.app_key}`;
+  const params = {
+    app_id: edamamAuth.app_id,
+    app_key: edamamAuth.app_key,
+    q: searchWord,
+    type: "public",
+  };
 
   // applying try-catch block inorder to catch error while fetching (if any)
   try {
-    const response = await axios.get(url);
+    const response = await axios.get(url, params);
     return response.data;
   } catch (error) {
-    console.log("We've encountered an Error.");
+    console.log("An has Error encountered.");
     console.log(error);
     return; // just to skip the script from running further
   }
