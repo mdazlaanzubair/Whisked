@@ -37,22 +37,24 @@ function App() {
 
   return (
     <div className="App" data-theme={theme}>
-      <BrowserRouter>
-        <Header setTheme={setTheme} theme={theme} />
-        <div className="container">
-          <Routes>
-            {routes_list.map((item, index) => (
-              <Route
-                exact
-                path={item.path}
-                element={item.element}
-                key={index}
-              />
-            ))}
-          </Routes>
-        </div>
-        <Footer />
-      </BrowserRouter>
+      <div className="container mx-auto font-default p-5">
+        <BrowserRouter>
+          <Header setTheme={setTheme} theme={theme} />
+          <div className="container">
+            <Routes>
+              {routes_list.map((item, index) => (
+                <Route
+                  exact
+                  path={item.path}
+                  element={item.element}
+                  key={index}
+                />
+              ))}
+            </Routes>
+          </div>
+          <Footer />
+        </BrowserRouter>
+      </div>
     </div>
   );
 }

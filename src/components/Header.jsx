@@ -24,8 +24,11 @@ const Header = ({ setTheme, theme }) => {
   const themeSwitch = (e) => setTheme(e.target.value);
 
   return (
-    <header>
-      <div className="flex w-full justify-end px- items-center py-2">
+    <header
+      id="header"
+      className="flex flex-col justify-center items-center space-y-3 bg-red-300 mb-5"
+    >
+      <div className="flex flex-row w-full justify-end">
         <h3 className="font-semibold text-sm mx-3">Theme</h3>
         <select
           className="select select-bordered select-dark w-auto select-xs max-w-xs border-gray-100 focus:border-gray-300 outline-none focus:outline-none"
@@ -45,8 +48,9 @@ const Header = ({ setTheme, theme }) => {
           ))}
         </select>
       </div>
-
-      <Navbar />
+      <div className="flex flex-col w-full justify-center">
+        <Navbar />
+      </div>
     </header>
   );
 };

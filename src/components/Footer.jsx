@@ -14,7 +14,7 @@ const Footer = () => {
   useEffect(() => currentYear, []);
 
   return (
-    <footer className="p-4 footer bg-base-300 text-base-content footer-center flex justify-between px-24">
+    <footer className="py-2 footer text-base-content footer-center flex justify-between px-24 shadow-2xl bg-neutral rounded-box">
       <div>
         <p>
           Copyright © <span className="font-medium">{year}</span> - All right
