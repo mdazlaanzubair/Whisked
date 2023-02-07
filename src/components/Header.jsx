@@ -26,7 +26,7 @@ const Header = ({ setTheme, theme }) => {
   return (
     <header
       id="header"
-      className="flex flex-col justify-center items-center space-y-3 bg-red-300 mb-5"
+      className="flex flex-col justify-center items-center space-y-3 mb-10"
     >
       <div className="flex flex-row w-full justify-end">
         <h3 className="font-semibold text-sm mx-3">Theme</h3>

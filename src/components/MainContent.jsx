@@ -1,5 +1,3 @@
-import axios from "axios";
-import { useEffect, useState } from "react";
 import About from "./About";
 import Chefs from "./Chefs";
 import Features from "./Features";
@@ -24,23 +22,13 @@ const MainContent = () => {
     <>
       <About />
 
-      <div className="divider"></div>
-
       <Quote quote={quotes[0]} />
-
-      <div className="divider"></div>
 
       <Features />
 
-      <div className="divider"></div>
-
       <Chefs />
 
-      <div className="divider"></div>
-
       <Quote quote={quotes[1]} />
-
-      <div className="divider"></div>
     </>
   );
 };
