@@ -35,55 +35,70 @@ const About = () => {
   return (
     <section id="about" className="container">
       <div className="max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8 rounded-3xl shadow-2xl">
-        <div className="">
-          <div class="hero-content flex-col lg:flex-row-reverse space-y-3 items-start justify-center">
-            <img
-              src="https://cdn.pixabay.com/photo/2015/08/25/03/50/background-906135_960_720.jpg"
-              class="max-w-md rounded-lg shadow-2xl hidden lg:block"
-            />
-            <div className="flex flex-col space-y-5">
-              <div className="mb-5">
-                <h2 className="text-3xl sm:text-5xl font-bold">
-                  What makes us special
-                </h2>
+        <div className="hero-content flex-col lg:flex-row-reverse space-y-3 items-start justify-center">
+          <img
+            src="https://cdn.pixabay.com/photo/2015/08/25/03/50/background-906135_960_720.jpg"
+            className="max-w-md rounded-lg shadow-2xl hidden lg:block"
+          />
+          <div className="flex flex-col space-y-5">
+            <div>
+              <h2 className="text-3xl sm:text-5xl font-bold">
+                What makes us special
+              </h2>
 
-                <p className="mt-4 text-lg sm:text-xl font-light md:font-medium md:text-1xl">
-                  At Whisked, we are dedicated to making cooking easy,
-                  accessible, and enjoyable for everyone. With our innovative
-                  technology and user-friendly design, we have created an app
-                  that makes meal planning, grocery shopping, and cooking a
-                  breeze.
-                </p>
-              </div>
-              <div>
-                <h2 className="text-3xl sm:text-5xl font-semibold">
-                  Recipes for Every Occasion
-                </h2>
+              <p className="mt-4 text-lg sm:text-xl font-light md:font-medium md:text-1xl">
+                At Whisked, we are dedicated to making cooking easy, accessible,
+                and enjoyable for everyone. With our innovative technology and
+                user-friendly design, we have created an app that makes meal
+                planning, grocery shopping, and cooking a breeze.
+              </p>
 
-                <p className="mt-4 text-lg md:text-xl font-light">
-                  With thousands of recipes to choose from Wh, you're sure to
-                  find the perfect dish for any occasion. From breakfast to
-                  dinner, snacks to desserts, and everything in between, our
-                  recipe library is constantly growing and updated with the
-                  latest and greatest recipes. Browse by ingredient, cuisine, or
-                  dietary restrictions to find the perfect meal for you.
-                </p>
-              </div>
+              <p className="mt-4 text-lg sm:text-xl font-light md:font-light md:text-1xl">
+                What sets us apart from other recipe apps is our personalized
+                recommendations, step-by-step instructions, and community
+                features. Our recommendation algorithm uses your cooking history
+                and preferences to suggest recipes that are tailored to your
+                taste. And with our easy-to-follow instructions, you can cook
+                amazing meals with confidence, even if you're a beginner in the
+                kitchen.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* divider */}
+      <hr className="my-10 border-0" />
+      {/* divider */}
+
+      <div className="max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8 rounded-3xl shadow-2xl">
+        <div className="hero-content flex-col space-y-3 items-start">
+          <div className="flex flex-col space-y-5">
+            <div className="max-w-2xl">
+              <h2 className="text-3xl sm:text-5xl font-bold">
+                Recipes for Every Occasion
+              </h2>
+
+              <p className="mt-4 text-lg sm:text-xl font-light md:font-medium md:text-1xl">
+                With thousands of recipes to choose from Wh, you're sure to find
+                the perfect dish for any occasion. From breakfast to dinner,
+                snacks to desserts, and everything in between, our recipe
+                library is constantly growing and updated with the latest and
+                greatest recipes.
+              </p>
             </div>
           </div>
         </div>
         <div className="mt-8 grid grid-cols-1 gap-8 md:mt-16 md:grid-cols-2 md:gap-12 lg:grid-cols-3">
           {cardData.map((item, index) => (
-            <div key={index} class="card">
-              {/* <figure class="px-10 pt-10"> */}
+            <div key={index} className="card hover:shadow-2xl">
               <img
                 src={item.img}
                 alt="Shoes"
-                class="rounded-xl shadow-2xl mx-12"
+                className="rounded-xl shadow-2xl mx-12"
               />
-              {/* </figure> */}
-              <div class="card-body items-center text-center">
-                <h2 class="card-title">{item.title}</h2>
+              <div className="card-body items-center text-center">
+                <h2 className="card-title">{item.title}</h2>
                 <p>{item.desc}</p>
               </div>
             </div>

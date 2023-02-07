@@ -32,8 +32,8 @@ const Chefs = () => {
     },
   ];
   return (
-    <div id="chefs" className="min-h-fit bg-base-200">
-      <div className="flex-col hero-content lg:flex-row-reverse">
+    <div id="chefs" className="container">
+      <div className="max-w-screen-md">
         <div>
           <h1 className="mb-2 text-5xl font-bold">Top Chefs</h1>
           <h3 className="mb-5 text-xl font-normal">

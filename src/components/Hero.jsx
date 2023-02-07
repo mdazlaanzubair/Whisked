@@ -27,8 +27,8 @@ const Hero = () => {
               recipes and cooking tools to help you whip up the perfect dish
               every time.
             </p>
-            <AnchorLink href="#about" className="btn btn-primary btn-wide">
-              Try it out!
+            <AnchorLink href="#about" className="btn btn-outline px-10">
+              Explore
             </AnchorLink>
           </div>
         </div>
