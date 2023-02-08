@@ -4,12 +4,8 @@ import DesktopNavbar from "./DesktopNavbar";
 
 const Navbar = () => {
   return (
-    <nav className="navbar bg-neutral text-neutral-content rounded-box shadow-2xl fixed mx-auto z-10">
+    <nav className="navbar bg-neutral text-neutral-content rounded-box shadow-2xl">
       <div className="navbar-start">
-        <MobileNavbar />
-        <DesktopNavbar />
-      </div>
-      <div className="navbar-center">
         <Link
           to="/"
           className="btn btn-ghost normal-case text-2xl font-fancy font-normal text-neutral-content hover:bg-transparent hover:text-primary"
@@ -18,9 +14,8 @@ const Navbar = () => {
         </Link>
       </div>
       <div className="navbar-end">
-        <Link to="/signup" className="btn btn-primary">
-          Join Us
-        </Link>
+        <MobileNavbar />
+        <DesktopNavbar />
       </div>
     </nav>
   );

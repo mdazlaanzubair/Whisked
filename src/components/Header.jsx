@@ -26,7 +26,7 @@ const Header = ({ setTheme, theme }) => {
   return (
     <header
       id="header"
-      className="flex flex-col justify-center items-center space-y-3 mb-10"
+      className="flex flex-col justify-center items-center space-y-3 mb-24"
     >
       <div className="flex flex-row w-full justify-end">
         <h3 className="font-semibold text-sm mx-3">Theme</h3>
@@ -48,7 +48,7 @@ const Header = ({ setTheme, theme }) => {
           ))}
         </select>
       </div>
-      <div className="flex flex-col w-full justify-center">
+      <div className="flex flex-col w-3/5 justify-center fixed z-10 top-5">
         <Navbar />
       </div>
     </header>

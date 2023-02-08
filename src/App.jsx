@@ -23,14 +23,6 @@ function App() {
       path: "/recipes",
       element: <Recipes />,
     },
-    {
-      path: "/signin",
-      element: <Signin />,
-    },
-    {
-      path: "/signup",
-      element: <Signup />,
-    },
   ];
 
   // themes of application
