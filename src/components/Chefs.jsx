@@ -57,13 +57,13 @@ const Chefs = () => {
             <a
               key={index}
               href={`https://www.google.com/search?q=${item.name}+aka+${item.title}+bios`}
-              class="group relative block bg-black"
+              class="group relative block bg-black rounded-2xl hover:shadow-2xl"
               target="_blank"
             >
               <img
                 alt="Developer"
                 src={item.img}
-                class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-30"
+                class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-30 rounded-2xl"
               />
 
               <div class="relative p-8">
@@ -71,13 +71,11 @@ const Chefs = () => {
                   {item.title}
                 </p>
 
-                <p class="text-2xl font-bold text-primary-content">
-                  {item.name}
-                </p>
+                <p class="text-2xl font-bold text-white">{item.name}</p>
 
                 <div class="mt-64">
                   <div class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
-                    <p class="text-sm text-primary-content">{item.desc}</p>
+                    <p class="text-sm text-white">{item.desc}</p>
                   </div>
                 </div>
               </div>

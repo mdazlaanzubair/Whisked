@@ -4,7 +4,7 @@ import DesktopNavbar from "./DesktopNavbar";
 
 const Navbar = () => {
   return (
-    <nav className="navbar bg-neutral text-neutral-content rounded-box shadow-2xl">
+    <nav className="navbar bg-neutral text-neutral-content rounded-box shadow-2xl fixed mx-auto z-10">
       <div className="navbar-start">
         <MobileNavbar />
         <DesktopNavbar />

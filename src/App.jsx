@@ -10,6 +10,7 @@ import Header from "./components/Header";
 import Signin from "./pages/Signin";
 import Signup from "./pages/Signup";
 import Footer from "./components/Footer";
+import JumpToTop from "./components/JumpToTop";
 
 function App() {
   // list of routes
@@ -53,6 +54,7 @@ function App() {
             </Routes>
           </div>
           <Footer />
+          <JumpToTop />
         </BrowserRouter>
       </div>
     </div>
