@@ -7,8 +7,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Recipes from "./pages/Recipes";
 import Header from "./components/Header";
-import Signin from "./pages/Signin";
-import Signup from "./pages/Signup";
 import Footer from "./components/Footer";
 import JumpToTop from "./components/JumpToTop";
 
