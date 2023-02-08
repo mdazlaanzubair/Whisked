@@ -14,13 +14,13 @@ const Footer = () => {
   useEffect(() => currentYear, []);
 
   return (
-    <footer className="py-2 footer text-base-content footer-center flex justify-between px-24 shadow-2xl bg-neutral rounded-box">
+    <footer className="footer bg-neutral-focus text-neutral-content px-4 py-2 justify-between rounded-2xl">
       <div>
         <p>
           Copyright © <span className="font-medium">{year}</span> - All right
           reserved by{" "}
           <a
-            className="btn btn-link px-0 font-semibold"
+            className="btn btn-link px-0 font-semibold "
             href="https://github.com/mdazlaanzubair/Whisked"
             title="Source Code"
             alt="Link to Github Repo"
@@ -32,7 +32,7 @@ const Footer = () => {
       </div>
       <div>
         <p>
-          Crafted -{" "}
+          Crafted by{" "}
           <a
             className="btn btn-link px-0 font-semibold"
             href="https://github.com/mdazlaanzubair"
