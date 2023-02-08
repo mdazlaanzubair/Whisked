@@ -48,7 +48,7 @@ const Header = ({ setTheme, theme }) => {
           ))}
         </select>
       </div>
-      <div className="flex flex-col w-3/5 justify-center fixed z-10 top-5">
+      <div className="flex flex-col w-3/5 justify-center fixed z-10 top-10">
         <Navbar />
       </div>
     </header>

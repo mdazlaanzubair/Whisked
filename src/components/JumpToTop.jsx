@@ -6,14 +6,14 @@ const JumpToTop = () => {
       href="#home"
       data-mdb-ripple="true"
       data-mdb-ripple-color="light"
-      class="shadow-2xl btn btn-circle btn-primary bottom-5 right-5 fixed"
+      className="shadow-2xl btn btn-circle btn-primary bottom-5 right-5 fixed"
       id="btn-back-to-top"
     >
       <svg
         aria-hidden="true"
         focusable="false"
         data-prefix="fas"
-        class="w-4 h-4"
+        className="w-4 h-4"
         role="img"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 448 512"

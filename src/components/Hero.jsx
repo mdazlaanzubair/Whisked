@@ -1,5 +1,4 @@
 import bg1 from "../assets/bg1.jpg";
-import AnchorLink from "react-anchor-link-smooth-scroll";
 import { Link } from "react-router-dom";
 
 const Hero = () => {
@@ -28,9 +27,9 @@ const Hero = () => {
               recipes and cooking tools to help you whip up the perfect dish
               every time.
             </p>
-            <AnchorLink href="#about" className="btn btn-primary px-10">
-              Explore
-            </AnchorLink>
+            <Link to="/recipes" className="btn btn-primary px-10">
+              Culinary Hunt
+            </Link>
           </div>
         </div>
       </div>

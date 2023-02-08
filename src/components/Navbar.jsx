@@ -4,7 +4,7 @@ import DesktopNavbar from "./DesktopNavbar";
 
 const Navbar = () => {
   return (
-    <nav className="navbar bg-neutral text-neutral-content rounded-box shadow-2xl">
+    <nav className="navbar bg-neutral text-neutral-content rounded-box shadow-2xl justify-between">
       <div className="navbar-start">
         <Link
           to="/"
@@ -13,7 +13,7 @@ const Navbar = () => {
           Whisked
         </Link>
       </div>
-      <div className="navbar-end">
+      <div className="navbar-end w-auto justify-end">
         <MobileNavbar />
         <DesktopNavbar />
       </div>

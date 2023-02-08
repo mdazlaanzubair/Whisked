@@ -7,6 +7,14 @@ const DesktopNavbar = () => {
     <ul className="hidden lg:menu lg:menu-horizontal lg:p-1">
       <li>
         <AnchorLink
+          href="#home"
+          className="hover:text-primary hover:bg-transparent border-b-2 border-transparent hover:border-primary rounded-none"
+        >
+          Home
+        </AnchorLink>
+      </li>
+      <li>
+        <AnchorLink
           href="#about"
           className="hover:text-primary hover:bg-transparent border-b-2 border-transparent hover:border-primary rounded-none"
         >
@@ -15,10 +23,10 @@ const DesktopNavbar = () => {
       </li>
       <li>
         <AnchorLink
-          href="#how-to"
+          href="#recipes"
           className="hover:text-primary hover:bg-transparent border-b-2 border-transparent hover:border-primary rounded-none"
         >
-          How to
+          Recipes
         </AnchorLink>
       </li>
       <li>
@@ -26,16 +34,8 @@ const DesktopNavbar = () => {
           href="#chefs"
           className="hover:text-primary hover:bg-transparent border-b-2 border-transparent hover:border-primary rounded-none"
         >
-          Master Chefs
+          Testimonial
         </AnchorLink>
-      </li>
-      <li>
-        <Link
-          to="/recipes"
-          className="hover:text-primary hover:bg-transparent border-b-2 border-transparent hover:border-primary rounded-none"
-        >
-          Recipes
-        </Link>
       </li>
     </ul>
   );

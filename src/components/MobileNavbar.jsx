@@ -25,16 +25,16 @@ const MobileNavbar = () => {
         className=" menu menu-compact dropdown-content mt-3 p-2 shadow-2xl bg-neutral rounded-box w-52"
       >
         <li>
+          <AnchorLink href="#home">Home</AnchorLink>
+        </li>
+        <li>
           <AnchorLink href="#about">About</AnchorLink>
         </li>
         <li>
-          <AnchorLink href="#how-to">How to</AnchorLink>
+          <AnchorLink href="#recipes">Recipes</AnchorLink>
         </li>
         <li>
-          <AnchorLink href="#chefs">Master Chefs</AnchorLink>
-        </li>
-        <li>
-          <Link to="/recipes">Recipes</Link>
+          <AnchorLink href="#chefs">Testimonial</AnchorLink>
         </li>
       </ul>
     </div>

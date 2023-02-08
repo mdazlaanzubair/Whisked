@@ -24,7 +24,7 @@ function App() {
   ];
 
   // themes of application
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState("synthwave");
 
   return (
     <div className="App" data-theme={theme}>

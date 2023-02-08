@@ -11,5 +11,5 @@ body {
 @tailwind utilities;
 
 .text-gradient-primary-secondary {
-  @apply text-transparent bg-clip-text bg-gradient-to-r from-secondary to-success;
+  @apply text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary;
 }

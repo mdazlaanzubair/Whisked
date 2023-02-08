@@ -71,7 +71,7 @@ const About = () => {
       <hr className="my-10 border-0" />
       {/* divider */}
 
-      <div className="max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8 rounded-3xl shadow-2xl">
+      <div id="recipes" className="max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8 rounded-3xl shadow-2xl">
         <div className="hero-content flex-col space-y-3 items-start">
           <div className="flex flex-col space-y-5">
             <div className="max-w-2xl">
